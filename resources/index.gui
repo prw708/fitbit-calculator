@@ -1,0 +1,85 @@
+<svg>
+  <svg id="numberPad" display="inline">
+    <defs>
+      <link rel="stylesheet" href="styles.css" />
+    </defs>
+    
+    <rect x="0" y="0" class="numberButton" />
+    <text x="16%" y="19%" class="largeText">1</text>
+    <rect id="1" pointer-events="visible" x="0" y="0" class="numberButton transparent" />
+
+    <rect x="33%" y="0" class="numberButton" />
+    <text x="49%" y="19%" class="largeText">2</text>
+    <rect id="2" pointer-events="visible" x="33%" y="0" class="numberButton transparent" />
+
+    <rect x="66%" y="0" class="numberButton" />
+    <text x="82%" y="19%" class="largeText">3</text>
+    <rect id="3" pointer-events="visible" x="66%" y="0" class="numberButton transparent" />
+
+    <rect x="0" y="25%" class="numberButton" />
+    <text x="16%" y="44%" class="largeText"> 4 </text>
+    <rect id="4" pointer-events="visible" x="0" y="25%" class="numberButton transparent" />
+
+    <rect x="33%" y="25%" class="numberButton" />
+    <text x="49%" y="44%" class="largeText"> 5 </text>
+    <rect id="5" pointer-events="visible" x="33%" y="25%" class="numberButton transparent" />
+    
+    <rect x="66%" y="25%" class="numberButton" />
+    <text x="82%" y="44%" class="largeText"> 6 </text>
+    <rect id="6" pointer-events="visible" x="66%" y="25%" class="numberButton transparent" />
+
+    <rect x="0" y="50%" class="numberButton" />
+    <text x="16%" y="69%" class="largeText"> 7 </text>
+    <rect id="7" pointer-events="visible" x="0" y="50%" class="numberButton transparent" />
+
+    <rect x="33%" y="50%" class="numberButton" />
+    <text x="49%" y="69%" class="largeText"> 8 </text>
+    <rect id="8" pointer-events="visible" x="33%" y="50%" class="numberButton transparent" />
+
+    <rect x="66%" y="50%" class="numberButton" />
+    <text x="82%" y="69%" class="largeText"> 9 </text>
+    <rect id="9" pointer-events="visible" x="66%" y="50%" class="numberButton transparent" />
+    
+    <rect x="0" y="75%" class="numberButton" />
+    <text x="16%" y="94%" class="largeText"> . </text>
+    <rect id="dot" pointer-events="visible" x="0" y="75%" class="numberButton transparent" />
+    
+    <rect x="33%" y="75%" class="numberButton" />
+    <text x="49%" y="94%" class="largeText"> 0 </text>
+    <rect id="0" pointer-events="visible" x="33%" y="75%" class="numberButton transparent" />
+
+    <rect x="66%" y="75%" class="operatorButton" />
+    <text x="82%" y="91%" class="smallText">+-*/</text>
+    <rect id="operator" pointer-events="visible" x="66%" y="75%" class="operatorButton transparent" />
+  </svg>
+
+  <svg id="operatorPad" display="none">
+    <defs>
+      <link rel="stylesheet" href="styles.css" />
+    </defs>
+    
+    <text id="result" x="97%" y="22%" text-length="8" class="largeText resultText"></text>
+    <rect id="resultRect" pointer-events="visible" x="0" y="0" />
+    
+    <rect x="0" y="25%" class="operatorButton" />
+    <text x="25%" y="42%" class="largeText">+</text>
+    <rect id="add" pointer-events="visible" x="0" y="25%" class="operatorButton transparent" />
+    
+    <rect x="50%" y="25%" class="operatorButton" />
+    <text x="75%" y="42%" class="largeText">-</text>
+    <rect id="subtract" pointer-events="visible" x="50%" y="25%" class="operatorButton transparent" />
+
+    <rect x="0" y="50%" class="operatorButton" />
+    <text x="25%" y="72%" class="largeText">*</text>
+    <rect id="multiply" pointer-events="visible" x="0" y="50%" class="operatorButton transparent" />
+    
+    <rect x="50%" y="50%" class="operatorButton" />
+    <text x="75%" y="68%" class="largeText">/</text>
+    <rect id="divide" pointer-events="visible" x="50%" y="50%" class="operatorButton transparent" />
+    
+    <rect x="0" y="75%" class="clearButton" />
+    <text x="48%" y="93%" class="largeText">CLEAR</text>
+    <rect id="clear" pointer-events="visible" x="0" y="75%" class="clearButton transparent" />
+  </svg>
+  
+</svg>

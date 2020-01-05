@@ -1,0 +1,62 @@
+#numberPad .numberButton {
+  fill: fb-blue;
+  width: 33%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#numberPad .operatorButton {
+  fill: fb-lime;
+  width: 33%-3;
+  height: 25%-3;
+  opacity: 0.6;
+}
+
+#operatorPad .operatorButton {
+  fill: fb-lime;
+  width: 50%-3;
+  height: 25%-3;
+  opacity: 0.6;
+}
+
+#operatorPad .clearButton {
+  fill: fb-orange;
+  width: 100%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#operatorPad #resultRect {
+  fill: fb-blue;
+  width: 100%-3;
+  height: 25%-3;
+  opacity: 0.1;
+}
+
+#numberPad .transparent {
+  opacity: 0;
+}
+
+#operatorPad .transparent {
+  opacity: 0;
+}
+
+#operatorPad .resultText {
+  text-anchor: end;
+}
+
+.largeText {
+  font-family: "System-Regular";
+  font-weight: regular;
+  font-size: 50;
+  text-anchor: middle;
+  fill: fb-white;
+}
+
+.smallText {
+  font-family: "System-Regular";
+  font-weight: regular;
+  font-size: 30;
+  text-anchor: middle;
+  fill: fb-white;
+}
