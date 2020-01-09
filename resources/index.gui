@@ -3,51 +3,51 @@
       <link rel="stylesheet" href="styles.css" />
     </defs>
     
-    <rect x="0" y="0" class="numberButton" />
+    <rect x="0" y="0" class="numberButton blue" />
     <text x="16%" y="19%" class="largeText">1</text>
-    <rect id="1" pointer-events="visible" x="0" y="0" class="numberButton transparent" />
+    <rect id="1" pointer-events="visible" x="0" y="0" class="numberButtonRect transparent" />
 
-    <rect x="33%" y="0" class="numberButton" />
+    <rect x="33%" y="0" class="numberButton blue" />
     <text x="49%" y="19%" class="largeText">2</text>
-    <rect id="2" pointer-events="visible" x="33%" y="0" class="numberButton transparent" />
+    <rect id="2" pointer-events="visible" x="33%" y="0" class="numberButtonRect transparent" />
 
-    <rect x="66%" y="0" class="numberButton" />
+    <rect x="66%" y="0" class="numberButton blue" />
     <text x="82%" y="19%" class="largeText">3</text>
-    <rect id="3" pointer-events="visible" x="66%" y="0" class="numberButton transparent" />
+    <rect id="3" pointer-events="visible" x="66%" y="0" class="numberButtonRect transparent" />
 
-    <rect x="0" y="25%" class="numberButton" />
+    <rect x="0" y="25%" class="numberButton blue" />
     <text x="16%" y="44%" class="largeText"> 4 </text>
-    <rect id="4" pointer-events="visible" x="0" y="25%" class="numberButton transparent" />
+    <rect id="4" pointer-events="visible" x="0" y="25%" class="numberButtonRect transparent" />
 
-    <rect x="33%" y="25%" class="numberButton" />
+    <rect x="33%" y="25%" class="numberButton blue" />
     <text x="49%" y="44%" class="largeText"> 5 </text>
-    <rect id="5" pointer-events="visible" x="33%" y="25%" class="numberButton transparent" />
+    <rect id="5" pointer-events="visible" x="33%" y="25%" class="numberButtonRect transparent" />
     
-    <rect x="66%" y="25%" class="numberButton" />
+    <rect x="66%" y="25%" class="numberButton blue" />
     <text x="82%" y="44%" class="largeText"> 6 </text>
-    <rect id="6" pointer-events="visible" x="66%" y="25%" class="numberButton transparent" />
+    <rect id="6" pointer-events="visible" x="66%" y="25%" class="numberButtonRect transparent" />
 
-    <rect x="0" y="50%" class="numberButton" />
+    <rect x="0" y="50%" class="numberButton blue" />
     <text x="16%" y="69%" class="largeText"> 7 </text>
-    <rect id="7" pointer-events="visible" x="0" y="50%" class="numberButton transparent" />
+    <rect id="7" pointer-events="visible" x="0" y="50%" class="numberButtonRect transparent" />
 
-    <rect x="33%" y="50%" class="numberButton" />
+    <rect x="33%" y="50%" class="numberButton blue" />
     <text x="49%" y="69%" class="largeText"> 8 </text>
-    <rect id="8" pointer-events="visible" x="33%" y="50%" class="numberButton transparent" />
+    <rect id="8" pointer-events="visible" x="33%" y="50%" class="numberButtonRect transparent" />
 
-    <rect x="66%" y="50%" class="numberButton" />
+    <rect x="66%" y="50%" class="numberButton blue" />
     <text x="82%" y="69%" class="largeText"> 9 </text>
-    <rect id="9" pointer-events="visible" x="66%" y="50%" class="numberButton transparent" />
+    <rect id="9" pointer-events="visible" x="66%" y="50%" class="numberButtonRect transparent" />
     
-    <rect x="0" y="75%" class="numberButton" />
+    <rect x="0" y="75%" class="numberButton blue" />
     <text x="16%" y="94%" class="largeText"> . </text>
-    <rect id="dot" pointer-events="visible" x="0" y="75%" class="numberButton transparent" />
+    <rect id="dot" pointer-events="visible" x="0" y="75%" class="numberButtonRect transparent" />
     
-    <rect x="33%" y="75%" class="numberButton" />
+    <rect x="33%" y="75%" class="numberButton blue" />
     <text x="49%" y="94%" class="largeText"> 0 </text>
-    <rect id="0" pointer-events="visible" x="33%" y="75%" class="numberButton transparent" />
+    <rect id="0" pointer-events="visible" x="33%" y="75%" class="numberButtonRect transparent" />
 
-    <rect x="66%" y="75%" class="operatorButton" />
+    <rect x="66%" y="75%" class="operatorButton lime" />
     <text x="82%" y="91%" class="smallText">+-*/</text>
-    <rect id="operator" pointer-events="visible" x="66%" y="75%" class="operatorButton transparent" />
+    <rect id="operator" pointer-events="visible" x="66%" y="75%" class="operatorButtonRect transparent" />
   </svg>

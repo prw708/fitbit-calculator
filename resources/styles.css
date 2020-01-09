@@ -1,49 +1,58 @@
-#numberPad .numberButton {
+/*
+ *  Colors
+ */
+
+.blue {
   fill: fb-blue;
-  width: 33%-3;
-  height: 25%-3;
-  opacity: 0.8;
 }
 
-#numberPad .operatorButton {
+.lime {
   fill: fb-lime;
-  width: 33%-3;
-  height: 25%-3;
-  opacity: 0.6;
 }
 
-#operatorPad .operatorButton {
-  fill: fb-lime;
-  width: 50%-3;
-  height: 25%-3;
-  opacity: 0.6;
+.lavender {
+  fill: fb-lavender;
 }
 
-#operatorPad .clearButton {
+.lightgray {
+  fill: fb-light-gray;
+}
+
+.slate {
+  fill: fb-slate;
+}
+
+.cyan {
+  fill: fb-cyan;
+}
+
+.indigo {
+  fill: fb-indigo;
+}
+
+.peach {
+  fill: fb-peach;
+}
+
+.red {
+  fill: fb-red;
+}
+
+.orange {
   fill: fb-orange;
-  width: 100%-3;
-  height: 25%-3;
-  opacity: 0.8;
 }
 
-#operatorPad #resultRect {
-  fill: fb-blue;
-  width: 100%-3;
-  height: 25%-3;
-  opacity: 0.1;
+.down {
+  opacity: 0.6;
 }
 
-#numberPad .transparent {
+.transparent {
   opacity: 0;
 }
 
-#operatorPad .transparent {
-  opacity: 0;
-}
-
-#operatorPad .resultText {
-  text-anchor: end;
-}
+/*
+ *  Text
+ */
 
 .largeText {
   font-family: "System-Regular";
@@ -59,4 +68,66 @@
   font-size: 30;
   text-anchor: middle;
   fill: fb-white;
+}
+
+/*
+ *  Screen 1
+ */
+
+#numberPad .numberButton {
+  width: 33%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#numberPad .numberButtonRect {
+  width: 33%-3;
+  height: 25%-3;
+}
+
+#numberPad .operatorButton {
+  width: 33%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#numberPad .operatorButtonRect {
+  width: 33%-3;
+  height: 25%-3;
+}
+
+/*
+ *  Screen 2
+ */
+
+#operatorPad .operatorButton {
+  width: 50%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#operatorPad .operatorButtonRect {
+  width: 50%-3;
+  height: 25%-3;
+}
+
+#operatorPad .clearButton {
+  width: 100%-3;
+  height: 25%-3;
+  opacity: 0.8;
+}
+
+#operatorPad .clearButtonRect {
+  width: 100%-3;
+  height: 25%-3;
+}
+
+#operatorPad #resultRect {
+  width: 100%-3;
+  height: 25%-3;
+  opacity: 0;
+}
+
+#operatorPad .resultText {
+  text-anchor: end;
 }

@@ -13,8 +13,8 @@ let operand = "";
 const upperLimit = 99999999;
 const lowerLimit = -9999999;
 
-let numButtonColor = "fb-blue";
-let operatorButtonColor = "fb-lime";
+let numButtonColorClass = "blue";
+let operatorButtonColorClass = "lime";
 
 initNumScreen();
 
@@ -23,25 +23,23 @@ initNumScreen();
  */
 
 function setMouseEvents() {
-  let numKeys = document.getElementsByClassName("numberButton");
+  let numKeys = document.getElementsByClassName("numberButtonRect");
   numKeys.forEach(function(numKey) {
     numKey.onmousedown = function(e) {
-      numKey.style.fill = "fb-black";
-      numKey.style.opacity = 0.6;
+      numKey.class = "numberButtonRect down";
     }
     numKey.onmouseup = function(e) {
-      numKey.style.opacity = 0;
+      numKey.class = "numberButtonRect transparent";
     }
   });
 
-  let operatorKeys = document.getElementsByClassName("operatorButton");
+  let operatorKeys = document.getElementsByClassName("operatorButtonRect");
   operatorKeys.forEach(function(operatorKey) {
     operatorKey.onmousedown = function(e) {
-      operatorKey.style.fill = "fb-black";
-      operatorKey.style.opacity = 0.6;
+      operatorKey.class = "operatorButtonRect down"
     }
     operatorKey.onmouseup = function(e) {
-      operatorKey.style.opacity = 0;
+      operatorKey.class = "operatorButtonRect transparent";
     }
   });
 }
@@ -50,36 +48,48 @@ function setMouseEvents() {
  *  Set color scheme based on setting
  */
 
-messaging.peerSocket.onmessage = function(evt) {
-  switch(evt.data.val) {
+messaging.peerSocket.onmessage = function(e) {
+  switch(e.data.val) {
     case "fb-lime":
-      numButtonColor = "fb-blue";
-      operatorButtonColor = "fb-lime";
+      numButtonColorClass = "blue";
+      operatorButtonColorClass = "lime";
       break;
     case "fb-blue":
-      numButtonColor = "fb-lavender";
-      operatorButtonColor = "fb-blue";
+      numButtonColorClass = "lavender";
+      operatorButtonColorClass = "blue";
       break;
     case "fb-slate":
-      numButtonColor = "fb-light-gray";
-      operatorButtonColor = "fb-slate";
+      numButtonColorClass = "lightgray";
+      operatorButtonColorClass = "slate";
       break;
     case "fb-indigo":
-      numButtonColor = "fb-cyan";
-      operatorButtonColor = "fb-indigo";
+      numButtonColorClass = "cyan";
+      operatorButtonColorClass = "indigo";
       break;
     case "fb-red":
-      numButtonColor = "fb-peach";
-      operatorButtonColor = "fb-red";
+      numButtonColorClass = "peach";
+      operatorButtonColorClass = "red";
+      break;
+    default:
+      numButtonColorClass = "blue";
+      operatorButtonColorClass = "lime";
       break;
   }
+  setNumKeys();
+  setOperatorKeys();
+}
+
+function setNumKeys() {
   let numKeys = document.getElementsByClassName("numberButton");
   numKeys.forEach(function(numKey) {
-    numKey.style.fill = numButtonColor;
+    numKey.class = "numberButton " + numButtonColorClass;
   });
+}
+
+function setOperatorKeys() {
   let operatorKeys = document.getElementsByClassName("operatorButton");
   operatorKeys.forEach(function(operatorKey) {
-    operatorKey.style.fill = operatorButtonColor;
+    operatorKey.class = "operatorButton " + operatorButtonColorClass;
   });
 }
 
@@ -89,6 +99,8 @@ messaging.peerSocket.onmessage = function(evt) {
 
 function initNumScreen() {
   setMouseEvents();
+  setNumKeys();
+  setOperatorKeys();
   let num1 = document.getElementById("1");
   let num2 = document.getElementById("2");
   let num3 = document.getElementById("3");
@@ -173,6 +185,7 @@ function initNumScreen() {
 
 function initOperatorScreen() {
   setMouseEvents();
+  setOperatorKeys();
   let add = document.getElementById("add");
   let subtract = document.getElementById("subtract");
   let multiply = document.getElementById("multiply");
@@ -182,11 +195,10 @@ function initOperatorScreen() {
 
   let clearKey = document.getElementById("clear");
   clearKey.onmousedown = function(e) {
-    clearKey.style.fill = "fb-black";
-    clearKey.style.opacity = 0.6;
+    clearKey.class = "clearButtonRect down"
   }
   clearKey.onmouseup = function(e) {
-    clearKey.style.opacity = 0;
+    clearKey.class = "clearButtonRect transparent";
   }
   
   add.onclick = function(e) {
@@ -218,10 +230,3 @@ function initOperatorScreen() {
     operator = "";
   }
 }
-
-
-
-
-
-
-

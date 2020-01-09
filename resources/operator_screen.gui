@@ -6,23 +6,23 @@
     <text id="result" x="97%" y="22%" text-length="8" class="largeText resultText"></text>
     <rect id="resultRect" pointer-events="visible" x="0" y="0" />
     
-    <rect x="0" y="25%" class="operatorButton" />
+    <rect x="0" y="25%" class="operatorButton lime" />
     <text x="25%" y="42%" class="largeText">+</text>
-    <rect id="add" pointer-events="visible" x="0" y="25%" class="operatorButton transparent" />
+    <rect id="add" pointer-events="visible" x="0" y="25%" class="operatorButtonRect transparent" />
     
-    <rect x="50%" y="25%" class="operatorButton" />
+    <rect x="50%" y="25%" class="operatorButton lime" />
     <text x="75%" y="42%" class="largeText">-</text>
-    <rect id="subtract" pointer-events="visible" x="50%" y="25%" class="operatorButton transparent" />
+    <rect id="subtract" pointer-events="visible" x="50%" y="25%" class="operatorButtonRect transparent" />
 
-    <rect x="0" y="50%" class="operatorButton" />
+    <rect x="0" y="50%" class="operatorButton lime" />
     <text x="25%" y="72%" class="largeText">*</text>
-    <rect id="multiply" pointer-events="visible" x="0" y="50%" class="operatorButton transparent" />
+    <rect id="multiply" pointer-events="visible" x="0" y="50%" class="operatorButtonRect transparent" />
     
-    <rect x="50%" y="50%" class="operatorButton" />
+    <rect x="50%" y="50%" class="operatorButton lime" />
     <text x="75%" y="68%" class="largeText">/</text>
-    <rect id="divide" pointer-events="visible" x="50%" y="50%" class="operatorButton transparent" />
+    <rect id="divide" pointer-events="visible" x="50%" y="50%" class="operatorButtonRect transparent" />
     
-    <rect x="0" y="75%" class="clearButton" />
+    <rect x="0" y="75%" class="clearButton orange" />
     <text x="48%" y="93%" class="largeText">CLEAR</text>
-    <rect id="clear" pointer-events="visible" x="0" y="75%" class="clearButton transparent" />
+    <rect id="clear" pointer-events="visible" x="0" y="75%" class="clearButtonRect transparent" />
   </svg>
